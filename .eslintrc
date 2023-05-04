@@ -1,13 +1,13 @@
 {
     "env": {
         "es2021": true,
-        "node": true
+        "node": true,
+        "react-native/react-native": true
     },
     "extends": [
         "plugin:react/recommended",
         "standard",
-        "standard/hooks",
-        "prettier"
+        "standard/hooks"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {

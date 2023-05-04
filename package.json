@@ -9,7 +9,6 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "prepare": "husky install"
-
   },
   "dependencies": {
     "@types/react": "~18.0.27",
@@ -26,6 +25,7 @@
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "babel-plugin-module-resolver": "^5.0.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-standard": "^17.0.0",
