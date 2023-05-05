@@ -7,6 +7,9 @@ module.exports = {
         background: '#252B33',
         'background-input': '#3A3F47',
         input: '#67686D'
+      },
+      width: {
+        'image-card': '100px'
       }
     }
   },
