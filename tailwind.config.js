@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         background: '#252B33',
         'background-input': '#3A3F47',
-        input: '#67686D'
+        input: '#67686D',
+        orange_star: '#FF8700'
       },
       width: {
         'image-card': '100px'

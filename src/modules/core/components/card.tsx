@@ -9,7 +9,7 @@ interface Props {
   loading?: boolean
 }
 
-export const MovieCard = ({ data, ...rest }: Props) => {
+export const Card = ({ data, ...rest }: Props) => {
   return (
     <Pressable {...rest} className="w-image-card h-40 rounded-2xl mx-2 mb-4 bg-gray-700">
       <Image

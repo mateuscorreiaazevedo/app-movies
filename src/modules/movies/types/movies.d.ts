@@ -4,7 +4,7 @@ interface MovieItem {
   poster_path: string
   overview: string
   release_date: string
-  popularity: number
+  vote_average: number
 }
 
 interface MoviesList {

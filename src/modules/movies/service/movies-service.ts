@@ -26,6 +26,28 @@ class MovieService extends Service {
         throw new Error('Erro no servidor da TMDb')
     }
   }
+
+  async search(props?: RequestProps) {
+    const { query } = props as RequestProps
+
+    const response = await this.request<{ results: MovieItem[]; page: number; error?: ErrorApi }>({
+      url: '/search/movie',
+      params: {
+        query
+      }
+    })
+
+    switch (response.code) {
+      case 200:
+        return response.body
+      case 401:
+        throw new Error(`$${response.body?.error?.status_code}: ${response.body?.error?.status_message}`)
+      case 404:
+        throw new Error(`$${response.body?.error?.status_code}: ${response.body?.error?.status_message}`)
+      default:
+        throw new Error('Erro no servidor da TMDb')
+    }
+  }
 }
 
 export const movieService = new MovieService()

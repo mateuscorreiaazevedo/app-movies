@@ -1,8 +1,13 @@
+import { SearchProvider, useSearch } from '@/modules/core'
 import { HomeScreen } from '@/screens'
+import { StatusBar } from 'expo-status-bar'
 import React from 'react'
 
-export default function App () {
+export default function App() {
   return (
-    <HomeScreen />
+    <SearchProvider>
+      <HomeScreen />
+      <StatusBar style="inverted" />
+    </SearchProvider>
   )
 }
